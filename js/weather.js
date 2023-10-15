@@ -8,7 +8,7 @@ function onGeoOk(position) {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
   fetch(url)
     .then((response) => response.json())
-    .then((data) => {
+    .then((data) => { 
       city.innerText = data.name;
       weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
     });

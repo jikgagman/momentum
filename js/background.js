@@ -12,7 +12,7 @@ function paintImage(chosenImage) {
 
 function genRandom() {
   const chosenImage = images[Math.floor(Math.random() * images.length)];
-  return chosenImage;
+  return chosenImage; 
 }
 
 function init() {
